@@ -1,6 +1,6 @@
 #mainNav {
   height: 80px;
-  width: 1366px;
+  width: 100%;
   background-color: rgba(9, 12, 28, .8);
   line-height: 80px;
   position: fixed;
@@ -32,15 +32,19 @@
       line-height: 24px;
       letter-spacing: 0px;
       color: #ffffff;
+      border-bottom: 3px rgba(0, 0, 0, 0) solid;
       a {
         color: #ffffff;
       }
     }
     .active {
+      background-color: rgba(66, 63, 69, 0.4);
       border-image: linear-gradient(-90deg, #f877bf 0%, #159ff2 100%) 1;
       border-width: 3px;
       border-style: solid;
       border-image-slice: 0 0 100% 0;
+      border-left: 0;
+      border-right: 0;
     }
   }
 }
@@ -53,6 +57,7 @@
   height: 711px;
   background: url(./img/banner_bg.png) no-repeat;
   overflow: hidden;
+  background-size: cover;
   i {
     display: block;
     width: 266px;
@@ -74,7 +79,9 @@
 }
 
 .tab_panel_wrap {
-  background: url(./img/tab_panel_bg.jpg) no-repeat;
+  background: url(./img/tab_panel_bg.png) no-repeat;
+  background-size: cover;
+  margin-top: -2px;
   .tab_panel {
     h2 {
       height: 40px;
@@ -265,6 +272,79 @@
       height: 237px;
       margin: 0 auto 172px;
       background: url(./img/tab_panel5_item.png) no-repeat;
+      .tab_panel5_item1{
+        margin-left: 198px;
+        .tab_panel5_item_c{
+          margin-right: 111px;
+          &::after{
+            bottom: -40px;
+          }
+          &:nth-of-type(1)::after{
+            content: '2018 Q1';
+          }
+          &:nth-of-type(2)::after{
+            content: '2018 Q3';
+          }
+          &:nth-of-type(3)::after{
+            content: '2019 Q1';
+          }
+          &:nth-of-type(4)::after{
+            content: '2019 Q3';
+          }
+        }
+      }
+      .tab_panel5_item2{
+        margin-left: 70px;
+        margin-top: 157px;
+        .tab_panel5_item_c{
+          margin-right: 111px;
+          vertical-align: top;
+          &::after{
+            top: -40px;
+          }
+          &:nth-of-type(1)::after{
+            content: '2017 Q3';
+          }
+          &:nth-of-type(2)::after{
+            content: '2018 Q2';
+          }
+          &:nth-of-type(3)::after{
+            content: '2018 Q4';
+          }
+          &:nth-of-type(4)::after{
+            content: '2019 Q2';
+          }
+        }
+      }
+      .tab_panel5_item_c{
+        height: 42px;
+        font-family: SourceHanSansCN-Regular;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 26px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        &:last-of-type{
+          margin-right: 0;
+        }
+        &::after{
+          position: absolute;
+          width: 100%;
+          left: 0;
+          text-align: center;
+          font-family: SourceHanSansCN-Regular;
+          font-size: 18px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 26px;
+          letter-spacing: 0px;
+          color: #3699eb;
+        }
+      }
     }
   }
 }
@@ -290,14 +370,14 @@
       display: inline-block;
       margin-right: 44px;
       font-size: 22px;
-      a:hover{
-        color: #fff;
-      }
-      a:active{
-        color: #fff;
-      }
-      a:link {
+      a:link::before{
         color: #3c3c3c;
+      }
+      a:active::before{
+        color: #fff;
+      }
+      a:hover::before{
+        color: #fff;
       }
     }
     li:last-of-type {

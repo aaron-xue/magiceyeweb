@@ -1,6 +1,6 @@
 #mainNav {
   height: 80px;
-  width: 1366px;
+  width: 100%;
   background-color: rgba(9, 12, 28, 0.8);
   line-height: 80px;
   position: fixed;
@@ -34,15 +34,19 @@
   line-height: 24px;
   letter-spacing: 0px;
   color: #ffffff;
+  border-bottom: 3px rgba(0, 0, 0, 0) solid;
 }
 #mainNav #main_links li a {
   color: #ffffff;
 }
 #mainNav #main_links .active {
+  background-color: rgba(66, 63, 69, 0.4);
   border-image: linear-gradient(-90deg, #f877bf 0%, #159ff2 100%) 1;
   border-width: 3px;
   border-style: solid;
   border-image-slice: 0 0 100% 0;
+  border-left: 0;
+  border-right: 0;
 }
 .tab_panel {
   width: 100%;
@@ -51,6 +55,7 @@
   height: 711px;
   background: url(img/banner_bg.png) no-repeat;
   overflow: hidden;
+  background-size: cover;
 }
 #tab_panel1 i {
   display: block;
@@ -71,7 +76,9 @@
   text-align: center;
 }
 .tab_panel_wrap {
-  background: url(img/tab_panel_bg.jpg) no-repeat;
+  background: url(img/tab_panel_bg.png) no-repeat;
+  background-size: cover;
+  margin-top: -2px;
 }
 .tab_panel_wrap .tab_panel h2 {
   height: 40px;
@@ -257,6 +264,79 @@
   margin: 0 auto 172px;
   background: url(img/tab_panel5_item.png) no-repeat;
 }
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item1 {
+  margin-left: 198px;
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item1 .tab_panel5_item_c {
+  margin-right: 111px;
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item1 .tab_panel5_item_c::after {
+  bottom: -40px;
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item1 .tab_panel5_item_c:nth-of-type(1)::after {
+  content: '2018 Q1';
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item1 .tab_panel5_item_c:nth-of-type(2)::after {
+  content: '2018 Q3';
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item1 .tab_panel5_item_c:nth-of-type(3)::after {
+  content: '2019 Q1';
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item1 .tab_panel5_item_c:nth-of-type(4)::after {
+  content: '2019 Q3';
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item2 {
+  margin-left: 70px;
+  margin-top: 157px;
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item2 .tab_panel5_item_c {
+  margin-right: 111px;
+  vertical-align: top;
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item2 .tab_panel5_item_c::after {
+  top: -40px;
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item2 .tab_panel5_item_c:nth-of-type(1)::after {
+  content: '2017 Q3';
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item2 .tab_panel5_item_c:nth-of-type(2)::after {
+  content: '2018 Q2';
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item2 .tab_panel5_item_c:nth-of-type(3)::after {
+  content: '2018 Q4';
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item2 .tab_panel5_item_c:nth-of-type(4)::after {
+  content: '2019 Q2';
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item_c {
+  height: 42px;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item_c:last-of-type {
+  margin-right: 0;
+}
+.tab_panel_wrap #tab_panel5 .tab_panel5_item .tab_panel5_item_c::after {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-family: SourceHanSansCN-Regular;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: #3699eb;
+}
 #main_footer {
   width: 100%;
   height: 273px;
@@ -281,14 +361,14 @@
   margin-right: 44px;
   font-size: 22px;
 }
-#main_footer ul li a:hover {
-  color: #fff;
-}
-#main_footer ul li a:active {
-  color: #fff;
-}
-#main_footer ul li a:link {
+#main_footer ul li a:link::before {
   color: #3c3c3c;
+}
+#main_footer ul li a:active::before {
+  color: #fff;
+}
+#main_footer ul li a:hover::before {
+  color: #fff;
 }
 #main_footer ul li:last-of-type {
   margin-right: 0;

@@ -70,6 +70,18 @@ class Home extends Component {
             <h2>ROADMAP</h2>
             <i></i>
             <div className='tab_panel5_item'>
+              <div className='tab_panel5_item1'>
+                <div className='tab_panel5_item_c'>Magic Eye <br />生态系统理念确定</div>
+                <div className='tab_panel5_item_c'>完成公链搭建基础工作，<br />搭建分布式内容平台框架</div>
+                <div className='tab_panel5_item_c'>公链主网发布，<br />数字钱包开发测试</div>
+                <div className='tab_panel5_item_c'>分布式数据平台 <br />正式版发布</div>
+              </div>
+              <div className='tab_panel5_item2'>
+                <div className='tab_panel5_item_c'>Magic Eye <br />生态之旅开启</div>
+                <div className='tab_panel5_item_c'>白皮书、官网发布，公链<br />基础环境搭建</div>
+                <div className='tab_panel5_item_c'>公链测试网络发布</div>
+                <div className='tab_panel5_item_c'>推出Dapp，<br />分布式数据平台测试版本</div>
+              </div>
             </div>
           </div>
         </div>
@@ -113,7 +125,7 @@ class Home extends Component {
     link_items.click(function () {
       let index = link_items.index(this);
       $('body,html').animate({ scrollTop: $('.tab_panel:eq(' + index + ')').offset().top - 200 }, 200);
-  });
+    });
   }
 }
 
