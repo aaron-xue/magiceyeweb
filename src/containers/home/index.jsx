@@ -21,7 +21,7 @@ class Home extends Component {
             <li className='link_item'><a href="javascript:;">特点</a></li>
             <li className='link_item'><a href="javascript:;">技术</a></li>
             <li className='link_item'><a href="javascript:;">ROADMAP</a></li>
-            <li><a href="whiteBook2.5.pdf" target="_Blank">白皮书</a></li>
+            <li><a href="whiteBook3.4.pdf" target="_Blank">白皮书</a></li>
           </ul>
           <i id='nav_button'></i>
         </div>
@@ -152,9 +152,18 @@ class Home extends Component {
       });
 
     })
+    let _this = this;
     link_items.click(function () {
       let index = link_items.index(this);
       $('body,html').animate({ scrollTop: $('.tab_panel:eq(' + index + ')').offset().top - 50 }, 200);
+      _this.setState({
+        showNav:!_this.state.showNav
+      })
+      if (_this.state.showNav) {
+        main_links.addClass('showNav');
+      }else{
+        main_links.removeClass('showNav');
+      }
     });
     nav_button.click( ()=> {
       this.setState({
