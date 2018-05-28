@@ -58,16 +58,17 @@
 }
 
 #tab_panel1 {
-  height: 711px;
+  height: 1079px;
   background: url(./img/banner_bg.png) no-repeat;
   overflow: hidden;
   background-size: cover;
   i {
     display: block;
-    width: 266px;
-    height: 169px;
-    margin: 162px auto 73px;
+    width: 337px;
+    height: 214px;
+    margin: 265px auto 133px;
     background: url(./img/banner.png) no-repeat;
+    background-size: 337px 214px;
   }
   p {
     height: 40px;
@@ -96,7 +97,7 @@
       line-height: 40px;
       letter-spacing: 0px;
       color: #ffffff;
-      margin: 146px auto 17px;
+      margin: 200px auto 17px;
       text-align: center;
     }
     i {
@@ -108,22 +109,71 @@
     }
   }
   #tab_panel2 {
-    height: 865px;
+    height: 1055px;
     overflow: hidden;
-    div {
-      width: 604px;
-      height: 368px;
-      margin: 0 auto 76px;
-      background: url(./img/tab_panel_2.png) no-repeat;
+    .tab_panel2_items {
+      width: 999px;
+      height: 384px;
+      box-sizing: border-box;
+      margin: 0 auto 83px;
+      .tab_panel2_items_title{
+        width: 999px;
+        height: 76px;
+        box-sizing: border-box;
+        background-color: rgba(27, 27, 27, 0.7);
+        border: solid 2px rgba(0, 117, 169, 0.7);
+        font-family: SourceHanSansCN-Regular;
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        line-height: 76px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 7px;
+      }
+      .tab_panel2_items_c{
+        width: 999px;
+        height: 106px;
+        box-sizing: border-box;
+        background-color: rgba(27, 27, 27, 0.7);
+        border: solid 2px rgba(0, 117, 169, 0.7);
+        margin-top: 7px;
+        text-align: center;
+        h3{
+          height: 20px;
+          font-family: SourceHanSansCN-Regular;
+          font-size: 20px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 0px;
+          letter-spacing: 0px;
+          color: #ffffff;
+          margin-top: 20px;
+        }
+        a{
+          display: inline-block;
+          width: 303px;
+          height: 49px;
+          background-color: rgba(0, 73, 134, 0.7);
+          border: solid 1px rgba(0, 160, 233, 0.7);
+          font-family: SourceHanSansCN-Regular;
+          font-size: 20px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 49px;
+          letter-spacing: 0px;
+          color: #ffffff;
+          &:first-of-type{
+            margin-right: 15px;
+          }
+        }
+      }
     }
     p {
-      word-wrap: break-word;
-      word-break: break-all;
-      overflow: hidden;
-      height: 56px;
-      width: 808px;
+      width: 1068px;
       font-family: SourceHanSansCN-Normal;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: normal;
       font-stretch: normal;
       line-height: 28px;
@@ -137,11 +187,11 @@
     overflow: hidden;
     .tab_panel3_item1 {
       width: 995px;
-      height: 266px;
-      margin: 0 auto 156px;
+      height: 439px;
+      margin: 0 auto 123px;
       .left1 {
         width: 485px;
-        height: 48px;
+        height: 95px;
         font-family: SourceHanSansCN-Normal;
         font-size: 18px;
         font-weight: normal;
@@ -153,58 +203,91 @@
         margin-top: 106px;
       }
       .right1 {
-        width: 449px;
-        height: 266px;
+        width: 431px;
+        height: 439px;
         float: right;
         background: url(./img/tab_panel3_item1.png) no-repeat;
+        p{
+          font-family: SourceHanSansCN-Normal;
+          font-size: 20px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 28px;
+          letter-spacing: 0px;
+          color: #fefefe;
+          text-align: center;
+          margin-top: 419px;
+        }
       }
     }
     .tab_panel3_item2 {
-      width: 980px;
-      height: 301px;
-      margin: 0 auto 190px;
+      width: 995px;
+      height: 411px;
+      margin: 0 auto 218px;
       .left2 {
-        width: 406px;
-        height: 301px;
-        background: url(./img/tab_panel3_item2.png) no-repeat;
+        width: 425px;
+        height: 411px;
         float: left;
+        background: url(./img/tab_panel3_item2.png) no-repeat;
+        p{
+          font-family: SourceHanSansCN-Normal;
+          font-size: 20px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 28px;
+          letter-spacing: 0px;
+          color: #fefefe;
+          text-align: center;
+          margin-top: 397px;
+        }
       }
       .right2 {
-        width: 500px;
+        width: 495px;
         height: 75px;
         font-family: SourceHanSansCN-Normal;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: normal;
         font-stretch: normal;
         line-height: 28px;
         letter-spacing: 0px;
         color: #fefefe;
         float: right;
-        margin-top: 106px;
+        margin-top: 185px;
       }
     }
     .tab_panel3_item3 {
       width: 987px;
-      height: 355px;
+      height: 416px;
       margin: 0 auto;
       .left3 {
-        width: 485px;
-        height: 46px;
+        width: 492px;
+        height: 75px;
         font-family: SourceHanSansCN-Normal;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: normal;
         font-stretch: normal;
         line-height: 28px;
         letter-spacing: 0px;
         color: #fefefe;
         float: left;
-        margin-top: 131px;
+        margin-top: 144px;
       }
       .right3 {
         background: url(./img/tab_panel3_item3.png) no-repeat;
         width: 448px;
-        height: 355px;
+        height: 416px;
         float: right;
+        p{
+          font-family: SourceHanSansCN-Normal;
+          font-size: 20px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 28px;
+          letter-spacing: 0px;
+          color: #fefefe;
+          text-align: center;
+          margin-top: 394px;
+        }
       }
     }
   }
@@ -213,7 +296,7 @@
     .tab_panel4_item {
       width: 999px;
       height: 231px;
-      margin: 0 auto;
+      margin: 225px auto 372px;
       .tab_panel4_itemA {
         height: 100%;
         width: 33.33333%;
@@ -276,7 +359,7 @@
     .tab_panel5_item {
       width: 1240px;
       height: 237px;
-      margin: 0 auto 172px;
+      margin: 254px auto 342px;
       background: url(./img/tab_panel5_item.png) no-repeat;
       .tab_panel5_item1{
         margin-left: 198px;
@@ -514,75 +597,133 @@
     #tab_panel2 {
       height: 495px;
       overflow: hidden;
-      div {
-        width: 343px;
-        height: 208.6px;
-        margin: 0 auto 37px;
-        background: url(./img_mobile/tab_panel_2.png) no-repeat;
-        background-size: cover;
+      .tab_panel2_items {
+        width: 320px;
+        height: 185.6px;
+        box-sizing: border-box;
+        margin: 0 auto 38px;
+        .tab_panel2_items_title{
+          width: 320px;
+          height: 35.2px;
+          box-sizing: border-box;
+          background-color: rgba(27, 27, 27, 0.7);
+          border: solid 2px rgba(0, 117, 169, 0.7);
+          font-family: SourceHanSansCN-Regular;
+          font-size: 13px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 35.2px;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #ffffff;
+          margin-top: 2px;
+        }
+        .tab_panel2_items_c{
+          width: 320px;
+          height: 56px;
+          box-sizing: border-box;
+          background-color: rgba(27, 27, 27, 0.7);
+          border: solid 2px rgba(0, 117, 169, 0.7);
+          margin-top: 2px;
+          text-align: center;
+          h3{
+            height: 13px;
+            font-family: SourceHanSansCN-Regular;
+            font-size: 13px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 0px;
+            letter-spacing: 0px;
+            color: #ffffff;
+            margin-top: 11px;
+          }
+          a{
+            display: inline-block;
+            width: 144px;
+            height: 24px;
+            background-color: rgba(0, 73, 134, 0.7);
+            border: solid 1px rgba(0, 160, 233, 0.7);
+            font-family: SourceHanSansCN-Regular;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: #ffffff;
+            &:first-of-type{
+              margin-right: 7px;
+            }
+          }
+        }
       }
       p {
-        word-wrap: break-word;
-        word-break: break-all;
-        overflow: hidden;
-        height: 81px;
         width: 355px;
         font-family: SourceHanSansCN-Normal;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: normal;
         font-stretch: normal;
         line-height: 19.6px;
         letter-spacing: 0px;
         color: #ffffff;
         text-align: center;
+        margin: 0 auto;
       }
     }
     #tab_panel3 {
       overflow: hidden;
       .tab_panel3_item1 {
         width: 364px;
-        height: 182.7px;
+        height: 297px;
         margin: 0 auto 91px;
         .left1 {
           width: 355px;
           height: 36px;
           font-family: SourceHanSansCN-Normal;
-          font-size: 12px;
+          font-size: 15px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 19.6px;
           letter-spacing: 0px;
           color: #fefefe;
           float: none;
-          margin: 37px auto 0;
+          margin: 17px auto 0;
           text-align: center;
         }
         .right1 {
-          width: 254.4px;
-          height: 150.4px;
-          background: url(./img/tab_panel3_item1.png) no-repeat;
-          background-size: 254.4px 150.4px;
+          width: 247px;
+	        height: 240px;
+          background: url(./img_mobile/tab_panel3_item1.png) no-repeat;
           float: none;
           margin: 0 auto;
+          overflow: hidden;
+          p{
+            margin-top: 209px;
+            font-size: 15px;
+          }
         }
       }
       .tab_panel3_item2 {
         width: 355px;
-        height: 210.7px;
+        height: 290px;
         margin: 0 auto 88px;
         .left2 {
-          width: 229.6px;
-          height: 169.6px;
-          background: url(./img/tab_panel3_item2.png) no-repeat;
-          background-size: 229.6px 169.6px;
+          width: 242px;
+	        height: 234px;
+          background: url(./img_mobile/tab_panel3_item2.png) no-repeat;
+          background-size: 242px 234px;
           float: none;
           margin: 0 auto 22px;
+          overflow: hidden;
+          p{
+            margin-top: 212px;
+            font-size: 15px;
+          }
         }
         .right2 {
           width: 355px;
           height: 55px;
           font-family: SourceHanSansCN-Normal;
-          font-size: 12px;
+          font-size: 15px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 19.6px;
@@ -595,13 +736,13 @@
       }
       .tab_panel3_item3 {
         width: 355px;
-        height: 317px;
+        height: 383px;
         margin: 0 auto;
         .left3 {
           width: 355px;
           height: 36px;
           font-family: SourceHanSansCN-Normal;
-          font-size: 12px;
+          font-size: 15px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 19.6px;
@@ -613,11 +754,16 @@
         }
         .right3 {
           background: url(./img/tab_panel3_item3.png) no-repeat;
-          background-size: 253.6px 200.8px;
-          width: 253.6px;
-          height: 200.8px;
+          background-size:314px 247.2px;
+          width: 314px;
+          height: 307px;
           float: none;
-          margin: 0 auto 31px;
+          margin: 0 auto;
+          overflow: hidden;
+          p{
+            margin-top: 272px;
+            font-size: 15px;
+          }
         }
       }
     }
@@ -642,7 +788,7 @@
           h3 {
             height: 12px;
             font-family: SourceHanSansCN-Regular;
-            font-size: 12px;
+            font-size: 15px;
             font-weight: normal;
             font-stretch: normal;
             line-height: 19.6px;
@@ -655,7 +801,7 @@
             height: 34px;
             width: 260px;
             font-family: SourceHanSansCN-Regular;
-            font-size: 12px;
+            font-size: 15px;
             font-weight: normal;
             font-stretch: normal;
             line-height: 19.6px;
@@ -749,7 +895,7 @@
         .tab_panel5_item_c{
           height: 42px;
           font-family: SourceHanSansCN-Regular;
-          font-size: 12px;
+          font-size: 15px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 19.6px;

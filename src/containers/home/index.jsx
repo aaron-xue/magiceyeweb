@@ -33,23 +33,44 @@ class Home extends Component {
           <div className='tab_panel' id='tab_panel2'>
             <h2>简介</h2>
             <i></i>
-            <div></div>
-            <p>Magic Eye是一个基于物联网和区块链技术的3D数据生态系统。通过物联网化的3D智能硬件集群和搭建基于区块链底层架构的数据分享平台，构建一个集3D数据生成、分享和消费的生态体系。</p>
+            <div className='tab_panel2_items'>
+              <div className='tab_panel2_items_title'>DAPP</div>
+              <div className='tab_panel2_items_c'>
+                <h3>数据平台</h3>
+                <a href="javascript:;">SDKs</a>
+                <a href="javascript:;">Plugins</a>
+              </div>
+              <div className='tab_panel2_items_title'>智能合约</div>
+              <div className='tab_panel2_items_c'>
+                <h3>Magic Eye Blockchain</h3>
+                <a href="javascript:;">IPFS分布式储存</a>
+                <a href="javascript:;">超级账本</a>
+              </div>
+            </div>
+            <p>Magic Eye 通过搭建底层公链环境和简单易用的开发环境，构建一个可无限扩展的3D综合数据平台。</p>
+            <p>系统自身平台可以支持丰富的泛娱乐化的3D内容和版权规范化的3D数据，同时也支持第三方团队或个人在生态系统中建立Dapp来不断丰富整个生态。</p>
           </div>
           <div className='tab_panel' id='tab_panel3'>
             <h2>特点</h2>
             <i></i>
             <div className='tab_panel3_item1'>
-              <div className='right1'></div>
-              <div className='left1'>物联网与区块链紧密结合，智能3D终端将通过完整的物联网解决方案接入Magic Eye生态系统。</div>
+              <div className='right1'>
+                <p>泛娱乐化的3D内容平台</p>
+              </div>
+              <div className='left1'>Magic Eye生态系统提供泛娱乐化的内容平台，社区成员可以贡献3D图片、3D影视等3D内容，任何第三方团体及个人可以利用开发工具包和智能合约来开发自己的Dapp，从而不断丰富和扩展整个系统。
+</div>
             </div>
             <div className='tab_panel3_item2'>
-              <div className='left2'></div>
-              <div className='right2'>借助Magic Eye底层公链和分布式存储，生态系统参与者可以汇集各类3D影视、3D游戏、3DUGC等泛娱乐内容和3D模组等数据文件到区块链综合数据平台，且数据版权将得到保护。</div>
+              <div className='left2'>
+                <p>3D数据版权价值创造平台</p>
+              </div>
+              <div className='right2'>Magic Eye生态系统为广大3D数据创造者提供一个版权保护和价值创造的平台，为形成规范化的版权交易搭建桥梁。</div>
             </div>
             <div className='tab_panel3_item3'>
-              <div className='right3'></div>
-              <div className='left3'>建立内容分发过程的价值传播机制，形成用户积极参与内容分享与传播的良好生态环境。</div>
+              <div className='right3'>
+                <p>Magic Eye 用户角色</p>
+              </div>
+              <div className='left3'>基于数据在生态中的各个环节，Magic Eye生态系统参与者也拥有不同的角色，并通过token激励机制形成积极参与分享内容和数据的良性运转，构建良好的价值传播机制。</div>
             </div>
           </div>
           <div className='tab_panel' id='tab_panel4'>
